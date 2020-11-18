@@ -1,0 +1,86 @@
+
+.navbar{
+    justify-content: space-around !important;
+}
+
+.button-dot{
+    justify-content: center;
+}
+
+.size{
+    height:200px;
+    width:450px;
+    
+}
+
+.word{
+    float:right;  
+    margin-right: 270px;
+}
+
+.card-title{
+    padding:20px;
+}
+
+.video{
+    height: 350px;
+}
+.video1{
+    object-fit: fill;
+    height:200px;
+    width: 550px;
+}
+.separation{
+    margin:30px;
+}
+.container-fluid{
+    padding-right:0px !important;
+    padding-left:0px !important;
+}
+.active{
+    background-color: rgb(219, 215, 215) !important;
+}
+.card-header{
+    justify-content: space-between;
+    border-bottom: 0px !important;
+    background-color: rgba(0,0,0,0)!important;
+}
+
+.card{
+    margin-top:20px;
+
+}
+.card-body{
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
+}
+.card-img-top{
+    width: 100% !important;
+}
+
+.number1{
+    margin-top:20px;
+    margin-right: 10px;
+}
+.numbers{
+    margin-top:10px;
+}
+.nav-color{
+    background-color: rgb(165, 160, 160);
+}
+
+.card-photo{
+    width: 449px;
+}
+.space{
+    margin-top:20px;
+}
+
+.icon{
+    margin-bottom:20px;
+    margin-top:5px;
+    margin-right: 10px;
+    font-size:20px;
+    
+}
+

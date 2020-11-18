@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link type="text/css" rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+        <title>Instagram Photo Feed Bootstrap</title>
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-replace-svg="nest"></script>
+    </head>
+    <body>
+
+        <div class="container-fluid">
+
+             <!--BARRA HERRAMIENtAS-->
+
+            <nav class="navbar navbar nav-color">
+
+                <!-- icono+Instagram izq-->
+                <div class="row">          
+                    <i class="fab fa-instagram icon "></i>
+                    <a class="navbar-brand text-dark" href="#">Instagram</a>             
+                </div>
+                    
+                <div class="row">  
+
+                <!--botón verde derecha-->
+                    <button  type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                        Create a new post
+                    </button>
+
+                <!--tuerca derecha-->
+
+                    <div class="dropdown p-1">
+                        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-cog"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">Log Out</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+             <!--modal dentro del botón verde -->     
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <input class="form-control form-control-lg" type="text">
+                         </div>
+                         <div class="modal-body">
+                            <i class="fas fa-camera"></i>
+                            <i class="fas fa-map-marker-alt m-3"></i>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="bg-light" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="bg-success">Public</button>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+             <!--botones puntos en medio-->
+
+			<ul class="nav nav-pills mb-3 button-dot " id="pills-tab" role="tablist">
+				<li class="nav-item" role="presentation">
+					<a class="nav-link btn btn-lg active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+						aria-controls="pills-home" aria-selected="true">
+                        <i class="far fa-square"></i>
+                        
+                    </a>
+				</li>
+				<li class="nav-item" role="presentation">
+					<a class="nav-link btn btn lg" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+						aria-controls="pills-profile" aria-selected="false">
+                        <i class="far fa-square"></i>
+                    </a>
+				</li>
+			</ul>
+            
+			<div class="tab-content" id="pills-tabContent">
+				<div class="tab-pane fade show active" id="pills-home" role="tabpanel"aria-labelledby="pills-home-tab">
+ <!--9 fotos-->
+ <!--grupo 1-->
+                    <div class="card-group pb-2 space">
+                        <div class="card-photo">
+                            <img class="size"src="https://www.doogweb.es/wp-content/uploads/2015/10/Cachorro-malamute.jpg" class="card-img-top" alt="dog1">	
+                        </div>
+
+                        <div class="card-photo">
+                            <img class="size"src="https://image.freepik.com/foto-gratis/mujer-escribiendo-teclado-ordenador-portatil_23-2148086094.jpg" class="card-img-top" alt="computer">
+                        </div>
+                        
+                        <div class="card-photo">
+                            <img class="size"src="https://img2.freepng.es/20180320/gpe/kisspng-blue-web-colors-yellow-drawing-blue-square-png-5ab142ed0b1688.6900664715215664450454.jpg" class="card-img-top" alt="square">	
+                        </div>
+
+                    </div>
+<!--grupo 2-->
+                    <div class="card-group pb-1 ">
+                        <div class="card-photo">
+                            <img class="size"src="https://img.europapress.es/fotoweb/fotonoticia_20150119150741_420.jpg" alt="dog2">	
+                        </div>
+
+                        <div class="card-photo">
+                            <img class="size"src="https://www.elheraldo.co/sites/default/files/articulo/2019/06/08/leones.jpg" class="card-img-top" alt="lions">
+                        </div>
+                        
+                        <div class="card-photo">
+                           <iframe class="video1" src="https://www.google.com">
+                           </iframe>
+                        </div>
+                    </div>
+<!--grupo 3-->
+                    <div class="card-group">
+                        <div class="card-photo">
+                            <img class="size"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPluQsKWp4obLypu-1tk7m5hu0qtvn8t6-6Q&usqp=CAU" alt="computer">	
+                        </div>
+
+                        <div class="card-photo">
+                            <img class="size"src="https://i.pinimg.com/736x/ad/33/fa/ad33fa20e408cb61ea9a0c2ca9506d3b.jpg" class="card-img-top" alt="women">
+                        </div>
+                        
+                        <div class="card-photo">
+                            <img class="size"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR1dkuo4ngI1RLt4J77Ac8uPQ1BdX3o4Cemg&usqp=CAU" alt="mencomputer">	
+                        </div>
+                    </div>        
+			    </div>          
+			<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+ <!--foto1Vertical-->     
+                <div class="container col-md-4 offset-md-4">
+                    <div class="card" class="separation">
+
+                         <div class="row card-header">
+                            <h5 class="card-title"> <strong> My first photo </strong> </h5>
+                            <p class="number1"> 12/14 </p>
+                        </div>
+                    
+                        <img src="https://www.doogweb.es/wp-content/uploads/2015/10/Cachorro-malamute.jpg" class="card-img-top" alt="dog1">
+                        <div class="card-body">
+                            <p class="numbers"><strong> 23 likes </strong> </p>
+                            <p class="card-text"> This is my first photo of the feed, this is a multi line comment for testing purposes. I am learning to code with #BreatheCode. </p>
+                            <i class="far fa-heart"></i>
+                            <p class="word"> Comment... </p>
+                        </div>
+                    </div>
+
+    <!--foto2Vertical--> 
+                    <div class="card" class="separation">
+                        <div class="row card-header">
+                            <h5 class="card-title"> <strong> My first square </strong> </h5>
+                            <p class="number1"> 12/15 </p>
+                        </div>
+                        <img src="https://img2.freepng.es/20180320/gpe/kisspng-blue-web-colors-yellow-drawing-blue-square-png-5ab142ed0b1688.6900664715215664450454.jpg" class="card-img-top" alt="dog">
+                        <div class="card-body">
+                            <p class="numbers"><strong> 23 likes </strong> </p>
+                            <p class="card-text"> This is my first square with #BreatheCode. </p>
+                            <i class="far fa-heart"></i>
+                            <p class="word"> Comment... </p>
+                        </div>
+                    </div>
+    <!--foto3Vertical--> 
+                    <div class="card" class="separation">
+                        <div class="row card-header">
+                            <h5 class="card-title"> <strong> Some cute thing </strong> </h5>
+                            <p class="number1">12/16</p>
+                        </div>
+                        <img src="https://i.pinimg.com/originals/e3/5e/f1/e35ef162c2f2a715a599a9200f7bf70b.jpg" class="card-img-top" alt="dog">
+                        <div class="card-body">
+                            <p class="numbers"><strong> 23 likes </strong> </p>
+                            <p class="card-text">The internet approves this cute dog ... #BreatheCode. </p>
+                            <i class="far fa-heart"></i>
+                            <p class="word"> Comment... </p>
+                        </div>
+                    </div>
+    <!--foto4Vertical--> 
+                    <div class="card" class="separation">
+                        <div class="row card-header">
+                            <h5 class="card-title"> <strong> There´s a paparazzi around </strong> </h5>
+                            <p class="number1"> 12/17 </p>
+                        </div>
+                        <img src="https://image.freepik.com/foto-gratis/mujer-escribiendo-teclado-ordenador-portatil_23-2148086094.jpg" class="card-img-top" alt="computer">
+                        <div class="card-body">
+                            <p class="numbers"><strong> 23 likes </strong> </p>
+                            <p class="card-text">This is me waiting for the screen to show me awesome first website made at #BreatheCode. </p>
+                            <i class="far fa-heart"></i>
+                            <p class="word"> Comment... </p>
+                        </div>
+                    </div>
+    <!--vídeo5Vertical--> 
+                    <div class="card" class="separation">
+                        <div class="row card-header">
+                            <h5 class="card-title"> <strong> My first video </strong> </h5>
+                            <p class="number1"> 12/18 </p>
+                        </div>
+                        <iframe class="video" src="https://www.google.com">
+                        </iframe>
+                        <div class="card-body">
+                            <p class="numbers"><strong> 23 likes </strong> </p>
+                            <p class="card-text"> This is my first video made at #BreatheCode. </p>
+                            <i class="far fa-heart"></i>
+                            <p class="word"> Comment... </p>
+                        </div>
+                    </div>
+                </div>
+			</div>
+        </div> <!--cierro container-fluid-->
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+        </script>   
+     </body>
+</html>
